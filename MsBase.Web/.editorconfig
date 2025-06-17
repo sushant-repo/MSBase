@@ -1,0 +1,21 @@
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+
+[*.{js,jsx,mjs,cjs,ts,tsx,mts,cts,vue,css,scss,sass,less,styl}]
+charset = utf-8
+
+indent_style = space
+indent_size = 4
+
+[{package.json}]
+indent_style = space
+indent_size = 2
+
+trim_trailing_white_space = true
+max_line_length = 300
+quote_type = double
+space_around_brackets = none
+space_around_operators = true
