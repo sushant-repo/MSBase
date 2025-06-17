@@ -1,0 +1,32 @@
+ 
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+*.log
+
+# Visual Studio files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Rider IDE
+.idea/
+
+# Build logs
+*.tlog
+*.idb
+*.pdb
+
+# Auto-generated files
+Generated_Code/
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+*.nuspec
+
+# User-specific fi
