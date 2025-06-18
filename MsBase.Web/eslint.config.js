@@ -22,6 +22,15 @@ export default defineConfig([
         },
     },
 
+    {
+        files: ["vite.config.js"],
+        languageOptions: {
+            ecmaVersion: "latest",
+            sourceType: "module",
+            globals: globals.node,
+        },
+    },
+
     globalIgnores(["**/dist/**", "**/dist-ssr/**", "**/coverage/**"]),
 
     {
