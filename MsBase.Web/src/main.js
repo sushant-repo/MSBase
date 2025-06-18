@@ -1,13 +1,17 @@
-import './assets/main.css'
+import "./assets/main.css";
 
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
-import vuetify from './vuetify'
+import { createApp } from "vue";
+import App from "./App.vue";
+import router from "./router";
+import vuetify from "./vuetify";
 
-const app = createApp(App)
+import VPage from "@/components/global/VPage.vue";
 
-app.use(router)
-app.use(vuetify)
+const app = createApp(App);
 
-app.mount('#app')
+app.use(router);
+app.use(vuetify);
+app.component("VPage", VPage);
+
+app.mount("#app");
+

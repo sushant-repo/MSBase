@@ -9,7 +9,9 @@ const http = axios.create({
 });
 
 http.interceptors.response.use(
-    (response) => response,
+    (response) => {
+        return response.data;
+    },
     (error) => {
         if (import.meta.env.DEV) {
             if (error.response) {

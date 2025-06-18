@@ -1,13 +1,11 @@
 <template>
-  <v-layout>
-    <main>
-      <RouterView />
-    </main>
-  </v-layout>
+    <v-layout>
+        <RouterView />
+    </v-layout>
 </template>
 
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+    import { RouterView } from "vue-router";
 </script>
 
 <style scoped></style>
