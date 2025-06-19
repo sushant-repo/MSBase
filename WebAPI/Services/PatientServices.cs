@@ -14,6 +14,11 @@ namespace WebAPI.Services
             return patients.Select(PatientToDTO).ToList();
         }
 
+        public async Task<List<PatientVisitDTO>> GetPatientVisitsAsync(int patientId)
+        {
+            return await _patientRepository.GetAllVisitsAsync(patientId);
+        }
+
         private PatientDTO PatientToDTO(Patient x)
         {
             return new PatientDTO

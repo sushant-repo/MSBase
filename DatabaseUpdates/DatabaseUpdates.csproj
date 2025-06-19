@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <EmbeddedResource Include="Scripts/**/*.sql" />
+    <EmbeddedResource Include="Managed/**/*.sql" />
   </ItemGroup>
 
 </Project>

@@ -16,6 +16,12 @@ namespace WebAPI.Controllers
             return await _patientServices.GetPatientsAsync();
         }
 
+        [HttpGet("{id}/visits")]
+        public async Task<ActionResult<IEnumerable<PatientVisitDTO>>> GetPatientVisits(int id)
+        {
+            return await _patientServices.GetPatientVisitsAsync(id);
+        }
+
         
     }
 }
