@@ -24,7 +24,10 @@
     import http from "@/plugins/http";
     import { ref } from "vue";
     import { useLoading } from "@/plugins/useLoading";
+    import { getMessage } from "@/utils/text";
+    import useSnackbar from "@/plugins/snackbar";
 
+    const snackbar = useSnackbar();
     const patients = ref([]);
     const loading = useLoading();
 
@@ -32,6 +35,8 @@
         loading.start();
         try {
             patients.value = await http.get("/patients");
+        } catch (error) {
+            snackbar.error(getMessage(error));
         } finally {
             loading.end();
         }
